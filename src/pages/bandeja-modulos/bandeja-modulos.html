@@ -1,0 +1,46 @@
+<ion-header>
+  <!--class="panel"-->
+  <ion-grid class="panel">
+    <ion-row>
+      <ion-col col-2>
+        <img src="assets/icon/Group-80.png" class="imgIcon">
+      </ion-col>
+      <ion-col text-center>
+        iConstruye Mobile  
+      </ion-col>
+      <ion-col col-2 text-right>
+        <ion-icon name="menu" class="iconMenu"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="http://levinarquitectura.com/wp-content/uploads/2013/11/constructores-02-640x265.jpg" class="imgFondo">
+    <div class="card-title"></div>
+    <div class="card-subtitle">Bienvenido <br> {{nombreUser}}</div>
+  </ion-card>
+  <ion-grid >
+    <ion-row >
+      <ion-col col-6 text-center class="ion-col">
+        <img src="assets/icon/Group-94.png">
+        <p>Aprobaciones</p>
+      </ion-col>
+      <ion-col col-6 text-center class="ion-col" (tap)="solucionesBodega()">
+        <img src="assets/icon/cubes.png">
+        <p>Bodega</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6 text-center class="ion-col">
+        <img src="assets/icon/clipboard.png">
+        <p>Nombre Modulo</p>
+      </ion-col>
+      <ion-col col-6 text-center class="ion-col" (tap)="sinConexion()">
+        <img src="assets/icon/archive.png">
+        <p>Nombre Modulo</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

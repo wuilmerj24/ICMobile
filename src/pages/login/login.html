@@ -1,0 +1,53 @@
+<img src="assets/icon/963bn.jpg" class="imgFondoPrincipal">
+<ion-content padding>
+  <form [formGroup]="formulario" (ngSubmit)="saveData()" novalidate>
+    <ion-list>
+      <ion-list-header text-center no-lines>
+        <h1 class="h1Titulo">iC</h1>
+        <h2 class="h2Titulo">Mobile</h2>
+      </ion-list-header>
+      <ion-item text-center class="subtitulo" no-lines>
+        Inicie su sesion
+      </ion-item>
+      <ion-item>
+        <ion-icon name="person" item-start color="light"></ion-icon>
+        <ion-input type="text" placeholder="Nombre de Usuario" item-end clearInput formControlName="usuario" name="usuario"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="formulario.get('usuario').errors && formulario.get('usuario').dirty" class="error">
+        <p *ngIf="formulario.get('usuario').hasError('required')">
+          El usuario es requerido.
+        </p>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="home" item-start color="light"></ion-icon>
+        <ion-input type="text" placeholder="Empresa" item-end clearInput formControlName="empresa" name="empresa"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="formulario.get('empresa').errors && formulario.get('empresa').dirty" class="error">
+        <p *ngIf="formulario.get('empresa').hasError('required')">
+          La empresa es requerido.
+        </p>
+      </ion-item>
+      <ion-item >
+        <ion-icon name="key" item-start color="light"></ion-icon>
+        <ion-input type="password" placeholder="Clave" item-end clearInput formControlName="clave" name="clave"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="formulario.get('clave').errors && formulario.get('clave').dirty" class="error">
+        <p *ngIf="formulario.get('clave').hasError('required')">
+          La Clave es requerido.
+        </p>
+      </ion-item>
+      <br><br><br>
+      <button ion-button block color="light" padding (tap)="iniciarSesion()" [disabled]="!formulario.valid">
+        INICIAR
+      </button>
+    </ion-list>
+  </form>
+</ion-content>
+<ion-footer no-border>
+  <ion-list no-lines class="listaFooter">
+    <ion-item (tap)="lectorHuella()" class="listaFooter">
+      <p text-right class="textoPie">Iniciar con Touch ID</p>
+      <ion-icon ios="ios-radio-button-off" md="md-radio-button-off" item-end color="light"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-footer>

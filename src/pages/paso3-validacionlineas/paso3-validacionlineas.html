@@ -1,0 +1,153 @@
+<ion-header no-border>
+  <ion-navbar color="panel" hideBackButton no-lines>
+    <ion-title>Generando Recepción</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="light">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-grid style="background-color:#FF5722 !important;">
+    <ion-row>
+      <ion-col text-center>
+        <img class="circuloProgress" src="assets/icon/Ellipse-309.png">
+        <img class="lineProgress" src="assets/icon/Path-696.png">
+        <img class="circuloProgress" src="assets/icon/Ellipse-309.png">
+        <img class="lineProgress" src="assets/icon/Path-14.png">
+        <img class="circuloProgress" src="assets/icon/Ellipse-309.png">
+        <img class="lineProgress" src="assets/icon/Path-14.png">
+        <img class="circuloProgress" src="assets/icon/Ellipse-316.png">
+        <img class="lineProgress" src="assets/icon/Path-14.png">
+        <img class="circuloProgress" src="assets/icon/Ellipse-316.png">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p>OC</p>
+      </ion-col>
+      <ion-col>
+        <p>TRANSPORTE</p>
+      </ion-col>
+      <ion-col>
+        <p>LINEAS</p>
+      </ion-col>
+      <ion-col>
+        <p>EVIDENCIA</p>
+      </ion-col>
+      <ion-col>
+        <p>RESUMEN</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+<ion-content>
+  <ion-grid class="gridColumnas">
+    <ion-row>
+      <ion-col text-left>SALDO</ion-col>
+      <ion-col text-right>RECIBIENDO</ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="gridInfo">
+    <ion-row (tap)="selected(1)" [ngClass]="{'fondoSeleccionado':(idx==1)}">
+      <ion-col col-2><ion-label>5</ion-label> <ion-label>Caja</ion-label></ion-col>
+      <ion-col col-8><ion-label style="font-size:16px !important; text-align:left !important;" [ngClass]="{'tachado':(toggleA==false)}">Corchets 26/6 de 1000 25 HJ</ion-label> <ion-label style="font-size:9px !important; text-align:left !important;">ADC010080 - $140/Unitario <img src="assets/icon/Exclusion-10.png">  Bodega 01</ion-label></ion-col>
+      <ion-col col-2><ion-label>0</ion-label> <ion-label>Caja</ion-label></ion-col>
+    </ion-row>
+    <!-- ROWS DE LAS OPCIONES 1--> 
+    <div style="background: #FBE9E7 !important;" *ngIf="idx===1">  
+      <ion-row>
+        <div class="rowsToggle">
+          <ion-label>Producto viene</ion-label>
+          <ion-toggle [(ngModel)]="toggleA"></ion-toggle>
+        </div>
+      </ion-row>
+      <ion-row class="rowsCajas" justify-content-center no-padding no-margin>
+        <ion-col col-6>
+          <ion-card>
+            <br>
+            <ion-card-header [ngClass]="{'desabilitar':(toggleA==false)}">UN</ion-card-header>
+            <ion-col class="cuadros">
+              <ion-label class="labelA">0</ion-label>
+              <ion-label class="labelB">Recibidos Conforme</ion-label>
+            </ion-col>
+          </ion-card>
+        </ion-col>
+        <ion-col col-6>
+          <ion-card>
+            <br>
+            <ion-card-header [ngClass]="{'desabilitar':(toggleA==false)}">UN</ion-card-header>
+            <ion-col class="cuadros">
+              <ion-label class="labelA">0</ion-label>
+              <ion-label class="labelB">Rechazados</ion-label>
+            </ion-col>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row class="labelIcon">
+        <ion-col col-1></ion-col>
+        <ion-col [ngClass]="{'iconosGrises':(toggleA==false)}" (tap)="adjuntarImg()">
+          <ion-icon name="camera"></ion-icon>
+          <ion-label>Adjunta imagen</ion-label>
+        </ion-col>
+        <ion-col class="borderIcon" (tap)="cambiarUnidad()">
+          <ion-icon name="swap" color="panel" [ngClass]="{'iconosGrises':(toggleA==false)}"></ion-icon>
+          <ion-label style="color:#FF8A65 !important;" [ngClass]="{'iconosGrises':(toggleA==false)}">Cambiar Unidad</ion-label>
+        </ion-col>
+        <ion-col  (tap)="cambiarBodega()">
+          <ion-icon name="camera" color="panel" [ngClass]="{'iconosGrises':(toggleA==false)}"></ion-icon>
+          <ion-label style="color:#FF8A65 !important;" [ngClass]="{'iconosGrises':(toggleA==false)}">Cambiar Bodega</ion-label>
+        </ion-col>
+        <ion-col col-1></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col col-10><button ion-button block color="verdeButon" [disabled]="!toggleA" [ngClass]="{'desabilitar':(toggleA==false)}">RECIBIR</button></ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+    </div>
+    <!-- FIN ROWS DE LAS OPCIONES -->
+    <ion-row>
+      <ion-col col-2><ion-label>6</ion-label> <ion-label >UN</ion-label></ion-col>
+      <ion-col col-8><ion-label style="font-size:16px !important; text-align:left !important;">Plancha Fibrocemento 4 MM</ion-label> <ion-label style="font-size:9px !important; text-align:left !important;">12914-22837 - $250/Unitario <img src="assets/icon/Exclusion-10.png">  Bodega 01</ion-label></ion-col>
+      <ion-col col-2><ion-label>0</ion-label> <ion-label>Caja</ion-label></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2><ion-label>4</ion-label> <ion-label>UN</ion-label></ion-col>
+      <ion-col col-8><ion-label style="font-size:16px !important; text-align:left !important; color:#FF5722 !important;">Lija para Madera</ion-label> <ion-label style="font-size:9px !important; text-align:left !important;">C.06.02.01.013 - $250/Unitario <img src="assets/icon/Exclusion-10.png">  Bodega 01</ion-label></ion-col>
+      <ion-col col-2><ion-label>2</ion-label> <ion-label>Caja</ion-label></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2><ion-label>50</ion-label> <ion-label>UN</ion-label></ion-col>
+      <ion-col col-8><ion-label style="font-size:16px !important; text-align:left !important; text-decoration:line-through;">Clavo Yeso Carton 1 5/8’’ 1 KG</ion-label> <ion-label style="font-size:9px !important; text-align:left !important;">ADC010160 - $250/Unitario <img src="assets/icon/Exclusion-10.png">  Bodega 01</ion-label></ion-col>
+      <ion-col col-2><img src="assets/icon/Delete.png"><ion-label>No Viene</ion-label></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2><ion-label>151</ion-label> <ion-label>UN</ion-label></ion-col>
+      <ion-col col-8><ion-label style="font-size:16px !important; text-align:left !important;">Lapiz Pilot G-2-0.7 Negro</ion-label> <ion-label style="font-size:9px !important; text-align:left !important;">ADC010160 - $250/Unitario <img src="assets/icon/Exclusion-10.png">  Bodega 01</ion-label></ion-col>
+      <ion-col col-2><ion-label>2</ion-label> <ion-label>Caja</ion-label></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2><ion-label>87</ion-label> <ion-label>UN</ion-label></ion-col>
+      <ion-col col-8><ion-label style="font-size:16px !important; text-align:left !important;">Papel Fotocopia Tamaño Carta 75 GRS/M2 (Extra Blanco)</ion-label> <ion-label style="font-size:9px !important; text-align:left !important;">ADC010293 - $1.260/Unitario<img src="assets/icon/Exclusion-10.png">  Bodega 01</ion-label></ion-col>
+      <ion-col col-2><ion-label>2</ion-label> <ion-label>Caja</ion-label></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left outline color="panel" (tap)="volver()">
+          <ion-icon name="arrow-round-back"></ion-icon>
+          VOLVER
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-right color="verdeButon" (tap)="continuar()">
+          SIGUIENTE
+          <ion-icon name="arrow-round-forward"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

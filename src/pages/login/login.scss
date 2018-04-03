@@ -1,0 +1,58 @@
+page-login {
+    @font-face{
+        font-family: Roboto_light;
+        src:url(../assets/fonts/Roboto-Light.ttf) format('ttf');
+    }
+
+    .imgFondoPrincipal{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .h1Titulo{
+        font-size: 90px !important;
+        color:#FFFFFF !important;
+    }
+
+    .h2Titulo{
+        font-size: 30px !important;
+        color:#FFFFFF !important;
+    }
+
+    .subtitulo{
+        font-size: 35px !important;
+        color:#FFFFFF !important;
+    }
+
+    ion-content,ion-list-header,ion-item{
+        background-color: #FF5722 !important;
+        opacity: 0.9;
+    }
+
+    ion-input{
+        color:#FFFFFF !important;
+    }
+
+    button{
+        color: #FF5722 !important;
+        border-radius: 4% !important;
+    }
+
+    .textoPie{
+        color:#FFFFFF !important;
+    }
+
+    .h1Titulo, .h2Titulo, .subtitulo, ion-content,ion-list-header,ion-item,ion-input,button, .textoPie{
+        font-family: Roboto_light !important;
+    }
+
+    .error{
+        color:#FFFFFF !important;
+        text-align: center !important;
+        background: red !important;
+    }
+
+    .listaFooter{
+        background: transparent !important;
+    }
+}

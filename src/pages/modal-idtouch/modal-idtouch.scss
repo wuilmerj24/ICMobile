@@ -1,0 +1,29 @@
+page-modal-idtouch {
+    .fondo{
+        background: #333333 !important;
+        opacity: 0.9 !important;
+    }
+
+    .imgHuella{
+        width: 20% !important;
+        display: block;
+        margin: 0 auto;
+        padding-top:40% !important;
+    }
+
+    ion-list,ion-list-header,ion-item{
+        background-color: transparent !important;
+        color:#FFFFFF !important;
+        text-align: center !important;
+    }
+
+    ion-list-header{
+        font-size: 20px !important;
+    }
+
+
+    .pBoton{
+        color:#FFFFFF !important;
+        text-align: center !important;
+    }
+}

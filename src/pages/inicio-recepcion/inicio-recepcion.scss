@@ -1,0 +1,72 @@
+page-inicio-recepcion {
+    ion-content{
+        background-color:#FEF8F8 !important;
+    }
+
+    .toolbar-title{ 
+        font-size: 16px !important;
+    }
+
+    ion-card{
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    ion-list-header{
+        color:#FF5722 !important;
+        font-size: 14px !important;
+        background: transparent !important;
+        text-transform: capitalize !important;
+    }
+
+    .opcionesItem{
+        color:#FF5722 !important;
+        font-size: 16px !important;
+        text-align: left !important;
+    }
+
+    .h2ItemInfo{
+        color:#FF5722 !important;
+        font-size: 16px !important;
+        text-align: left !important;
+        font-weight: bold !important;
+    }
+
+    .pItemInfo{
+        color:#FF8A65 !important;
+        font-size: 14px !important;
+        text-align: left !important;
+    }
+
+    .btnOpcion{
+        background-color: transparent !important;
+        color:#FF8A65 !important;
+        font-size: 9px !important;
+    }
+
+    .imgBoton{
+        width: 70% !important;
+    }
+
+
+    .cardBotonera{
+        background-color: #FFFFFF !important;
+        padding-top: 5% !important;
+    }
+
+    ion-card-title{
+        color:#FF5722 !important;
+        font-size: 20px !important;
+        text-align: center !important;
+    }
+
+    .tamRow{
+        border: 1px solid black !important;
+        width: 70% !important;
+    }
+
+    .iconButon{
+        font-size: 25px !important;
+    }
+}

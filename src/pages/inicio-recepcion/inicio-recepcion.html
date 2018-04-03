@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar mode="ios" color="panel">
+   <ion-buttons start (tap)="navCtrl.pop()">
+     <button ion-button icon-only color="light">
+       <ion-icon name="arrow-round-back"></ion-icon>
+     </button>
+   </ion-buttons>
+   <ion-title class="tituloHeader">Recepción on Field</ion-title>
+   <ion-buttons end>
+     <button ion-button icon-only color="light">
+       <ion-icon name="menu"></ion-icon>
+     </button>
+   </ion-buttons>
+ </ion-toolbar>    
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-list-header no-lines>
+          Operando en :
+        </ion-list-header>
+        <ion-item>
+          <h2 class="h2ItemInfo">Obra Edificio Las Gaviotas</h2>
+          <p class="pItemInfo">Lord Cochrane 497, Santiago.</p>
+          <button item-end class="btnOpcion">
+            <img src="assets/icon/path.png" class="imgBoton">
+            Cambiar
+          </button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="cardBotonera">
+    <ion-card-header>
+      <ion-card-title>Seleccione una opción</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <button ion-button icon-left round color="panel" block>
+        <ion-grid>
+          <ion-row (tap)="codigoQR()"> 
+            <ion-col col-2 text-left >
+              <ion-icon name="camera" class="iconButon"></ion-icon>
+            </ion-col>
+            <ion-col text-center style="font-size:10px">
+              CAPTURAR CÓDIGO DE OC
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </button>
+      <hr style="color:transparent !important; background:transparent !important;">
+      <button ion-button icon-left round color="panel" block outline>
+        <ion-grid>
+          <ion-row >
+            <ion-col col-4 text-left>
+              <ion-icon name="search" class="iconButon"></ion-icon>
+            </ion-col>
+            <ion-col text-left>
+              BUSCAR OC
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

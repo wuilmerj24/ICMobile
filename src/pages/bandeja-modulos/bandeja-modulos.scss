@@ -1,0 +1,49 @@
+page-bandeja-modulos {
+    .panel{
+        background-color: #FF5722 !important;
+        color:#ffff !important;
+        font-size: 20px !important;
+    }
+
+    .imgIcon{
+        width: 40% !important;
+    }
+
+    .iconMenu{
+        font-size: 30px !important;
+    }
+
+    .ion-col{
+        padding: 6% !important;
+        border: 1px solid #ccc !important;
+    }
+
+    ion-card {
+        position: relative;
+        text-align: center;
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    
+    .card-title {
+        position: absolute;
+        top: 0;
+        font-size: 2.0em;
+        width: 100%;
+        height: 100% !important;
+        font-weight: bold;
+        color: #fff;
+        background: #FF5722 !important;
+        opacity: 0.5 !important;
+    }
+    
+    .card-subtitle {
+        font-size: 1.2em;
+        position: absolute;
+        top: 52%;
+        width: 100%;
+        color: #fff;
+        text-align: left !important;
+    }
+}

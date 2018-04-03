@@ -1,0 +1,132 @@
+<ion-header no-border>
+  <ion-navbar color="panel" hideBackButton no-lines>
+    <ion-title>Generando Recepción</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="light">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-grid style="background-color:#FF5722 !important;">
+    <ion-row>
+      <ion-col text-center>
+        <img class="circuloProgress" src="assets/icon/Ellipse-309.png">
+        <img class="lineProgress" src="assets/icon/Path-696.png">
+        <img class="circuloProgress" src="assets/icon/Ellipse-309.png">
+        <img class="lineProgress" src="assets/icon/Path-14.png">
+        <img class="circuloProgress" src="assets/icon/Ellipse-316.png">
+        <img class="lineProgress" src="assets/icon/Path-14.png">
+        <img class="circuloProgress" src="assets/icon/Ellipse-316.png">
+        <img class="lineProgress" src="assets/icon/Path-14.png">
+        <img class="circuloProgress" src="assets/icon/Ellipse-316.png">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p>OC</p>
+      </ion-col>
+      <ion-col>
+        <p>TRANSPORTE</p>
+      </ion-col>
+      <ion-col>
+        <p>LINEAS</p>
+      </ion-col>
+      <ion-col>
+        <p>EVIDENCIA</p>
+      </ion-col>
+      <ion-col>
+        <p>RESUMEN</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+<ion-content padding>
+  <ion-card class="cardBotonera" [hidden]="showCard">
+    <ion-card-header class="headerCard">
+      Ingrese Documento de Transporte
+    </ion-card-header>
+    <ion-card-content>
+      <button ion-button icon-left round color="panel" block (tap)="lectorQR()">
+        <ion-grid>
+          <ion-row > 
+            <ion-col col-2 text-left>
+              <ion-icon name="camera" class="iconButon"></ion-icon>
+            </ion-col>
+            <ion-col text-center style="font-size:10px">
+              CAPTURAR CÓDIGO
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </button>
+      <hr style="color:transparent !important; background:transparent !important;">
+      <button ion-button icon-left round color="panel" block outline (tap)="manual($event)">
+        <ion-grid>
+          <ion-row >
+            <ion-col col-4 text-left>
+              <ion-icon name="search" class="iconButon" color="panel"></ion-icon>
+            </ion-col>
+            <ion-col text-left style="color:#FF5722 !important;">
+              INGRESO MANUAL
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card [hidden]="!showCard" >
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="assets/icon/Symbol-22–1.png">
+          </ion-avatar>
+          <h2 style="color:#FF5722 !important;font-size: 16px !important;text-align: left !important;font-weight: bold !important;">Guía 56734</h2>
+          <p style="color:#FF5722 !important;font-size: 12px !important;text-align: left !important;font-weight: regular !important;">Transportes Carrasco Ltda.</p>
+          <p style="color:#FF5722 !important;font-size: 12px !important;text-align: left !important;font-weight: regular !important;">18.000.000-k</p>
+          <p style="color:#FF5722 !important;font-size: 12px !important;text-align: left !important;font-weight: bold !important;">Guía de Tercero</p>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card [hidden]="!showCard">
+    <ion-card-header class="headerCard">
+      <ion-label>
+        Ingresa datos de transportista
+      </ion-label>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="person" item-start color="panel"></ion-icon>
+          <ion-input type="text" placeholder="Nombre Chofer" class="inputPLaceholder"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="person" item-start color="panel"></ion-icon>
+          <ion-input type="text" placeholder="Rut Chofer" class="inputPLaceholder"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="person" item-start color="panel"></ion-icon>
+          <ion-input type="text" placeholder="Patente" class="inputPLaceholder"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer no-border [hidden]="!showCard">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left outline color="panel" (tap)="volver()">
+          <ion-icon name="arrow-round-back"></ion-icon>
+          VOLVER
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-right color="verdeButon" (tap)="continuar()">
+          SIGUIENTE
+          <ion-icon name="arrow-round-forward"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

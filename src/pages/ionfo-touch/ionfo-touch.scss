@@ -1,0 +1,53 @@
+page-ionfo-touch {
+    ion-content{
+        background-color: #FEF8F8 !important;
+    }
+
+    .cardTouch{
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 0px !important;
+        background-color: transparent !important;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    	box-shadow: none;
+    }
+
+    .divImg{
+        background-color: #FF5722 !important;
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .imgHuella{
+        width: 20% !important;
+        display: block;
+        margin: 0 auto;
+        padding-top:15% !important;
+        padding-bottom: 10% !important;
+    }
+
+    ion-card-content{
+        background-color: #ffffff !important;
+        //border:1px solid #000000;
+        width: 90% !important;
+        display: block;
+        margin: 0 auto;
+    }
+
+    ion-card-title{
+        text-align: center !important;
+        color:#FF8A65 !important;
+        font-weight: bold !important;
+    }
+
+    .parrarfoA{
+        text-align: center !important;
+        color:#FF8A65 !important;
+        font-size: 12px !important;
+    }
+
+    .btnCancelar{
+    }
+}

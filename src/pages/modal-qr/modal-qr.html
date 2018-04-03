@@ -1,0 +1,39 @@
+<ion-content>
+  <div style="background-color:#1A1A1A;height:50% !important;">
+    <ion-list no-lines>
+      <button ion-item (tap)="cerrarModal()" style="background: transparent !important;">
+        <ion-icon name="close-circle" color="panel" item-end class="iconClose"></ion-icon>
+      </button>
+    </ion-list>
+    <ion-card class="cardA">
+      <ion-card-content >
+        <ion-row >
+          <ion-col col-1></ion-col>
+          <ion-col col-10 class="cuadro">
+            <img src="assets/icon/codigo-barra.jpg" (tap)="generarRecepcion()"/>
+          </ion-col>
+          <ion-col col-1></ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+    <br>
+  </div>
+
+  <ion-card padding>
+    <ion-card-content >
+      <ion-row >
+        <ion-col ></ion-col>
+        <ion-col col-4 class="cuadro">
+          <img src="assets/icon/codigo-barra.jpg" />
+        </ion-col>
+        <ion-col ></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center class="tituloCardB">Escanee el código</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="textoCardB">Escanee el código Centre el código de barras entre las marcas para poder validar la Orden de Compra.</ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

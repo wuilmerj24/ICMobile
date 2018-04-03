@@ -1,0 +1,45 @@
+page-errorlineas-singestionar {
+    .fondo{
+        background: #333333 !important;
+        opacity: 0.9 !important;
+    }
+
+    ion-card{
+        padding-top: 20% !important;
+        background: transparent !important;
+    }
+
+    ion-card-header{
+        color:#FFFFFF !important;
+        font-size: 20px !important;
+        text-align: center !important;
+    }
+
+    img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50% !important;
+        padding-bottom: 15% !important;
+    }
+
+    p{
+        color:#FFFFFF !important;
+        font-size: 16px !important;
+        text-align: center !important;
+    }
+
+    .listaToogle{
+        padding-top: 20% !important;
+        ion-item{
+            color:#95989A !important;
+            font-size: 14px !important;
+        }
+    }
+
+    .my-width{
+        width:90% !important;
+        font-size: 14px !important;
+        text-align: center !important;
+        height: 7vh !important;
+	}
+}

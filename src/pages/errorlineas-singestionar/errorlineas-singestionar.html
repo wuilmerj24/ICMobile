@@ -1,0 +1,40 @@
+<ion-content class="fondo">
+  <ion-card>
+    <ion-card-header>
+      EXISTEN LÍNEAS SIN GESTIONAR
+    </ion-card-header>
+    <ion-card-content >
+      <ion-row >
+        <ion-col col-2></ion-col>
+        <ion-col class="cuadro">
+          <img src="assets/icon/Group.445.png" />
+        </ion-col>
+        <ion-col col-2></ion-col>
+      </ion-row>
+      <p>Para continuar la recepción debe gestionar todas las líneas o identificarlas como “No Vienen”.</p>
+      <ion-list class="listaToogle">
+        <ion-item>
+          <ion-label>Marcar como no viene</ion-label>
+          <ion-toggle color="panel"></ion-toggle>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6> 
+        <button ion-button color="light" (tap)="volver()" class="my-width" large style="color:#FF5722 !important;">
+          VOLVER
+        </button>
+      </ion-col>
+
+      <ion-col col-6>
+        <button ion-button color="btnGris" class="my-width" large style="color:#FFFFFF !important;">
+          SIGUIENTE
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

@@ -1,0 +1,52 @@
+page-recepcion-exitosa {
+    .fondo{
+        background: #333333 !important;
+        opacity: 0.9 !important;
+    }
+
+    ion-card{
+        background: transparent !important;
+    }
+
+    ion-card-title{
+        text-align: center !important;
+        color:#FFFFFF !important;
+        font-size: 20px !important;
+        font-weight: bold !important;
+    }
+
+    .bFlotanteutton{
+        //position: absolute;
+        ion-icon{
+            font-size: 50px !important;
+        }
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1 !important;
+        border-radius: 50% !important;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        width: 29% !important;
+        height: 12vh !important;
+    }
+
+    .textTitulo{
+        padding-top:5% !important;
+    }
+
+    ion-card{
+        padding-top:25% !important;
+    }
+
+    p{
+        font-size: 14px !important;
+        text-align: center !important;
+        color:#FFFFFF !important;    
+    }
+}

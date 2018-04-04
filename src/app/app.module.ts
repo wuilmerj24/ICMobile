@@ -5,13 +5,19 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import {PopoverPage} from '../pages/paso2-transporte/paso2-transporte';
 import { Keyboard } from '@ionic-native/keyboard';
+import {AlertCustomPage} from '../pages/paso3-validacionlineas/paso3-validacionlineas';
+import {AlertCustomPageB} from '../pages/paso3-validacionlineas/paso3-validacionlineas';
+import {AlertCustomPageC} from '../pages/paso3-validacionlineas/paso3-validacionlineas';
 
 import { MyApp } from './app.component';
 
 @NgModule({
   declarations: [
     MyApp,
-    PopoverPage
+    PopoverPage,
+    AlertCustomPage,
+    AlertCustomPageB,
+    AlertCustomPageC
   ],
   imports: [
     BrowserModule,
@@ -20,7 +26,10 @@ import { MyApp } from './app.component';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    PopoverPage
+    PopoverPage,
+    AlertCustomPage,
+    AlertCustomPageB,
+    AlertCustomPageC
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,69 @@
+page-paso4-evidencia-a {
+    ion-content{
+        background-color: #FEF8F8 !important;
+    }
+
+    ion-title{
+        font-size: 16px !important;
+        text-align: center !important;
+    }
+
+    ion-row {
+        ion-col {
+            &:first-of-type {
+                flex: 0 0 0 0;
+                padding-right: 0px !important;
+                float: right !important;
+            }
+            font-size: 10px !important;
+            text-align: center !important;
+            color:#FFFFFF !important;
+        }
+    }
+
+    .circuloProgress{
+        width: 4.5% !important;
+        padding: 0px !important;
+        vertical-align: middle !important;
+        padding-right: 0px !important;
+    }
+
+    .lineProgress{
+        width: 15% !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        vertical-align: middle !important;
+    }
+
+    .imgHeader{
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        font-size: 40px !important;
+        color:#FF8A65 !important;
+        text-align: center !important;
+    }
+
+    .imgTransporte{
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 30% !important;
+    }
+    
+    .tituloCard{
+        font-size: 18px !important;
+        color:#FF8A65 !important;
+        text-align: center !important;
+        font-weight: bold !important;
+    }
+
+    .iconPaper{
+        font-size: 24px !important;
+    }
+
+    .labelIcon{
+        color:#FF8A65 !important;
+        font-size: 14px !important;
+    }
+}

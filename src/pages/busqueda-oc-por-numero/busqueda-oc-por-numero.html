@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-toolbar mode="ios" color="panel">
+     <ion-buttons start (tap)="navCtrl.pop()">
+       <button ion-button icon-only color="light">
+         <ion-icon name="arrow-round-back"></ion-icon>
+       </button>
+     </ion-buttons>
+     <ion-title class="tituloHeader">Bodega OC</ion-title>
+     <ion-buttons end>
+       <button ion-button icon-only color="light">
+         <ion-icon name="menu"></ion-icon>
+       </button>
+     </ion-buttons>
+   </ion-toolbar>
+   <div>
+      <ion-segment mode="md" [(ngModel)]="opcionesSegment">
+        <ion-segment-button value="porNumero">
+          Nº OC
+        </ion-segment-button>
+        <ion-segment-button value="proveedor">
+          PROVEEDOR
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+ </ion-header>
+
+<ion-content>
+  <div [ngSwitch]="opcionesSegment">
+    <ion-list *ngSwitchCase="'porNumero'">
+      <ion-item>
+        <ion-searchbar mode="md" [showCancelButton]="false" (ionInput)="buscarText($event)" (ionCancel)="cancelarText($event)"></ion-searchbar>
+      </ion-item>
+      <ion-item-divider color="fondoColor"></ion-item-divider>
+      <ion-item *ngFor="let item of valorAbuscar; let i=index" (tap)="pasarItem(item)">
+        <h2>{{item.titulo}}</h2>
+        <p>{{item.subtitulo}}</p>
+        <ion-icon name="arrow-forward" color="panel" item-end></ion-icon>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'proveedor'">
+      <ion-item>
+        <ion-searchbar mode="md" [showCancelButton]="false" (ionInput)="buscarTextProveedor($event)" (ionCancel)="cancelarText($event)"></ion-searchbar>
+      </ion-item>
+      <ion-item-divider color="fondoColor"></ion-item-divider>
+      <ion-item *ngFor="let item of buscarProveedor; let i=index" (tap)="pasarItemProveedor(item)">
+        <h2>{{item.titulo}}</h2>
+        <ion-icon name="arrow-forward" color="panel" item-end></ion-icon>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

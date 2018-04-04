@@ -58,7 +58,7 @@
       <ion-row>
         <div class="rowsToggle">
           <ion-label>Producto viene</ion-label>
-          <ion-toggle [(ngModel)]="toggleA"></ion-toggle>
+          <ion-toggle [(ngModel)]="toggleA" (ionChange)="showRechazo()"></ion-toggle>
         </div>
       </ion-row>
       <ion-row class="rowsCajas" justify-content-center no-padding no-margin>

@@ -1,0 +1,31 @@
+<ion-content padding class="fondo">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>RECEPCIÓN EXITOSA</ion-card-title>
+    </ion-card-header>
+    <br>
+    <ion-card-content>
+      <button ion-button only-icon color="verdeButon" class="bFlotanteutton">
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+      <br><br>
+      <p>La recepción ya se encuentra en lista para su aprobación.</p>
+      <p>¿Desea realizar otra recepción?</p>
+    </ion-card-content>
+  </ion-card>
+  <br><br><br>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 (tap)="volver()">
+        <button ion-button block color="light" style="color:#FF5722 !important;font-weight:bold !important;">  
+          NO
+        </button>          
+      </ion-col>
+      <ion-col col-6 (tap)="continuar()">
+        <button ion-button block color="verdeButon">
+          Si
+        </button>          
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -41,7 +41,8 @@ $colors: (
   dark:       #222,
   panel:      #FF5722,
   verdeButon: #28A745,
-  btnGris:    #CCCCCC
+  btnGris:    #CCCCCC,
+  fondoColor:   #FEF8F8
 );
 
 $text-input-placeholder-color:#f4f4f4;
@@ -54,7 +55,13 @@ $text-input-placeholder-color:#f4f4f4;
   $popover-ios-min-width:45vh !important;
   $segment-button-ios-border-radius:10px !important;
   $toggle-ios-background-color-on:map-get($colors, panel);
-
+  $searchbar-ios-input-search-icon-color:map-get($colors,panel );
+  $searchbar-ios-padding-horizontal:0px;
+  $searchbar-ios-input-clear-icon-color:map-get($colors,panel );
+  $searchbar-ios-input-placeholder-color:map-get($colors,panel );
+  $searchbar-ios-input-text-color:map-get($colors,panel );
+  //$segment-button-ios-text-color:map-get($colors,panel );
+  //$segment-button-ios-background-color-activated:map-get($colors,panel );
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
@@ -63,6 +70,14 @@ $text-input-placeholder-color:#f4f4f4;
   $popover-md-width:45vh !important;
   $popover-md-min-width:45vh !important;
   $toggle-md-track-background-color-on:map-get($colors, panel);
+  $searchbar-md-input-search-icon-color:map-get($colors, panel);
+  $searchbar-md-input-clear-icon-color:map-get($colors, panel);
+  $searchbar-md-input-box-shadow:map-get($colors, light);
+  $searchbar-md-input-placeholder-color:map-get($colors, panel);
+  $searchbar-md-input-text-color:map-get($colors, panel);
+  $segment-button-md-text-color-activated:map-get($colors, panel);
+  $segment-button-md-border-color-activated:map-get($colors, panel);
+  $segment-button-md-border-bottom-color:map-get($colors, btnGris);
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here

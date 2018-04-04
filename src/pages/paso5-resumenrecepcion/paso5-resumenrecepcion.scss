@@ -1,0 +1,110 @@
+page-paso5-resumenrecepcion {
+    ion-content{
+        background-color: #FEF8F8 !important;
+    }
+
+    ion-title{
+        font-size: 16px !important;
+        text-align: center !important;
+    }
+
+    ion-row {
+        ion-col {
+            &:first-of-type {
+                flex: 0 0 0 0;
+                padding-right: 0px !important;
+                float: right !important;
+            }
+            font-size: 10px !important;
+            text-align: center !important;
+            color:#FFFFFF !important;
+        }
+    }
+
+    .circuloProgress{
+        width: 4.5% !important;
+        padding: 0px !important;
+        vertical-align: middle !important;
+        padding-right: 0px !important;
+    }
+
+    .lineProgress{
+        width: 15% !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        vertical-align: middle !important;
+    }
+
+    ion-card-header{
+        color:#FF5722 !important;
+        font-size: 16px !important;
+        font-weight: bold !important;
+        text-align: left !important;
+        padding-bottom:0px !important;
+    }
+
+    .bFlotanteutton{
+        position: absolute !important;
+        border-radius: 50% !important;
+        padding: 4% !important;
+        ion-icon{
+            font-size: 14px !important;
+        }
+        bottom:0px !important;
+    }
+
+    .labelTitulo,.labelsubTitulo{
+        color:#FF8A65 !important;
+    }
+
+    .labelTitulo{
+        text-align: left !important;
+        font-weight: regular !important;
+        font-size: 12px !important;
+    }
+
+    .labelsubTitulo{
+        text-align: left !important;
+        font-weight: bold !important;
+        font-size: 12px !important;
+    }
+
+    .gridOpciones{
+        padding: 0px !important;
+        margin:0px !important;
+        .labelPrincipal{
+            color:#95989A !important;
+            font-size: 14px !important;
+            text-align: left !important;
+            padding: 0px !important;
+            font-weight: bold !important;
+        }
+
+        .labelSubPrincipal{
+            color:#95989A !important;
+            font-size: 12px !important;
+            text-align: left !important;
+            padding: 0px !important;
+            font-weight: normal !important;
+        }
+
+        .imgBodega{
+            width: 10% !important;
+            vertical-align: middle !important;
+            float: left;
+            padding-top: 3% !important;
+        }
+
+        .labelNumer{
+            color:#95989A !important;
+            font-size: 12px !important;
+            font-weight: normal !important;
+        }
+
+        .labelText{
+            color:#95989A !important;
+            font-size: 12px !important;
+            font-weight: normal !important;
+        }
+    }
+}

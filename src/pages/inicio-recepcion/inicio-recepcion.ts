@@ -18,6 +18,14 @@ export class InicioRecepcionPage {
     })
     modal.present();
   }
+  
+  buscarOC(){
+    let modal=this.modalCtrl.create("BusquedaOcPorNumeroPage");
+    modal.onDidDismiss(data=>{
+      console.log("modal");
+    })
+    modal.present();
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InicioRecepcionPage');

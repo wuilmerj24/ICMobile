@@ -146,3 +146,31 @@ page-paso3-validacionlineas {
     }
 }
 
+.clasePopover{
+    ion-list-header{
+        color:#FF5722 !important;
+        font-size: 14px !important;
+        text-align: left !important;
+        font-weight: bold !important;
+    }
+
+    ion-item{
+        color:#999999 !important;
+        font-size: 14px !important;
+        text-align: left !important;
+        font-weight: regular !important;
+    }
+
+    button{
+        color:#FF5722 !important;
+        font-size: 14px !important;
+        text-align: center !important;
+        font-weight: bold !important;
+    }
+
+    .itemselect{
+        color:#FF5722 !important;
+        background: #FBE9E7 !important;
+    }
+}
+

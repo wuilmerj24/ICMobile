@@ -45,7 +45,7 @@
     <ion-list>
       <ion-item>
         <ion-avatar item-start>
-          <img src="assets/icon/Symbol-22–1.png">
+          <img src="assets/icon/Symbol-221.png">
         </ion-avatar>
         <h2 class="tituloOrden">Orden de de compra 789</h2>
         <p class="subtituloOrden">Sodimac S.A.</p>
@@ -108,17 +108,18 @@
       </ion-row>
     </ion-grid>
   </ion-card>
-
+</ion-content>
+<ion-footer>
   <ion-grid class="footerButon">
-    <ion-row >
-      <ion-col ></ion-col>
-        <ion-col col-10 (tap)="continuar()">
-          <button ion-button icon-end block style="color:#FFFFFF !important; font-size:14px !important;" color="verdeButon">
-            SIGUIENTE
-            <ion-icon name="arrow-forward" icon-end></ion-icon>
-          </button>
-        </ion-col>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col col-10 (tap)="continuar()">
+        <button ion-button icon-end block style="color:#FFFFFF !important; font-size:14px !important;" color="verdeButon">
+          SIGUIENTE
+          <ion-icon name="arrow-forward" icon-end></ion-icon>
+        </button>
+      </ion-col>
       <ion-col></ion-col>
     </ion-row>
   </ion-grid>
-</ion-content>
+</ion-footer>

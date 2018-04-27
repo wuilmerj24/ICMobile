@@ -51,8 +51,8 @@ $text-input-placeholder-color:#f4f4f4;
 // iOS only Sass variables can go here
   $text-input-ios-input-clear-icon-color:#f4f4f4;
   $toolbar-ios-title-text-color: map-get($colors, light);
-  $popover-ios-width:45vh !important;
-  $popover-ios-min-width:45vh !important;
+  //$popover-ios-width:45vh !important;
+  //$popover-ios-min-width:80vh !important;
   $segment-button-ios-border-radius:10px !important;
   $toggle-ios-background-color-on:map-get($colors, panel);
   $searchbar-ios-input-search-icon-color:map-get($colors,panel );
@@ -67,8 +67,8 @@ $text-input-placeholder-color:#f4f4f4;
 // Material Design only Sass variables can go here
   $text-input-md-input-clear-icon-color:#f4f4f4;
   $toolbar-md-title-text-color: map-get($colors, light);
-  $popover-md-width:45vh !important;
-  $popover-md-min-width:45vh !important;
+  //$popover-md-width:45vh !important;
+  //$popover-md-min-width:80vh !important;
   $toggle-md-track-background-color-on:map-get($colors, panel);
   $searchbar-md-input-search-icon-color:map-get($colors, panel);
   $searchbar-md-input-clear-icon-color:map-get($colors, panel);

@@ -40,7 +40,7 @@
     </ion-row>
   </ion-grid>
 </ion-header>
-<ion-content padding>
+<ion-content>
   <ion-card class="cardBotonera" [hidden]="showCard">
     <ion-card-header class="headerCard">
       Ingrese Documento de Transporte
@@ -111,8 +111,24 @@
       </ion-list>
     </ion-card-content>
   </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left outline color="panel" (tap)="volver()">
+          <ion-icon name="arrow-round-back"></ion-icon>
+          VOLVER
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-right color="verdeButon" (tap)="continuar()">
+          SIGUIENTE
+          <ion-icon name="arrow-round-forward"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
-<ion-footer no-border [hidden]="!showCard">
+<!--<ion-footer no-border [hidden]="!showCard">
   <ion-grid>
     <ion-row>
       <ion-col>
@@ -130,3 +146,4 @@
     </ion-row>
   </ion-grid>
 </ion-footer>
+-->

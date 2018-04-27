@@ -90,12 +90,13 @@ page-paso1-validacion-oc {
     }
 
     .footerButon{
-        position: fixed !important;
+        //position: fixed !important;
         left: 0 !important;
         bottom: 0 !important;
         width: 100% !important;
         background-color: transparent !important;
         color: white !important;
         text-align: center !important;
+        padding-top: 5% !important;
     }
 }
